@@ -7,15 +7,28 @@
   "bin": {
     "ccguard": "dist/index.js"
   },
+  "files": [
+    "dist",
+    "README.md"
+  ],
   "scripts": {
     "build": "tsc",
     "dev": "tsx src/index.ts",
     "test": "vitest run",
-    "test:watch": "vitest"
+    "test:watch": "vitest",
+    "prepublishOnly": "npm run build"
   },
   "keywords": ["claude-code", "linter", "validator", "cli", "configuration"],
   "author": "Claude Code Company",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ryu0705/ccguard.git"
+  },
+  "homepage": "https://github.com/Ryu0705/ccguard#readme",
+  "bugs": {
+    "url": "https://github.com/Ryu0705/ccguard/issues"
+  },
   "devDependencies": {
     "@types/node": "^22.0.0",
     "typescript": "^5.7.0",

@@ -1,5 +1,5 @@
 {
-  "name": "ccguard",
+  "name": "@ryu0705/ccguard",
   "version": "0.1.0",
   "description": "Validate, analyze, and optimize your Claude Code configuration",
   "type": "module",
